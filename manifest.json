@@ -1,0 +1,10 @@
+{
+    "name": "Arrow Remapping",
+    "description": "Remaps IJKL to arrow keys to be used for streaming UIs",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "popup.png"
+    }
+  }
