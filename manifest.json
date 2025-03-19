@@ -1,6 +1,6 @@
 {
     "name": "Arrow Remapping",
-    "description": "Remaps IJKL to arrow keys to be used for streaming UIs",
+    "description": "Remaps J and L to arrow keys to be used for skips in streaming UIs",
     "version": "1.0",
     "manifest_version": 3,
     "permissions": [
@@ -11,13 +11,16 @@
     },
     "content_scripts": [
       {
-        "matches": ["https://*.hulu.com/*"],
+        "matches": [
+          "https://www.hulu.com/watch/*", 
+          "https://www.netflix.com/watch/*", 
+          "https://play.max.com/video/watch/*", 
+          "https://www.peacocktv.com/watch/*", 
+          "https://www.amazon.com/gp/video/*",
+          "https://tv.apple.com/*"
+        ],
         "js": ["/src/content-script.js"]
       }
-    ],
-    "host_permissions": [
-      "http://*/*",
-      "https://*/*"
     ],
     "action": {
       "default_popup": "/popup/popup.html",
