@@ -3,6 +3,22 @@
     "description": "Remaps IJKL to arrow keys to be used for streaming UIs",
     "version": "1.0",
     "manifest_version": 3,
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "service_worker": "/src/background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.hulu.com/*"],
+        "js": ["/src/content-script.js"]
+      }
+    ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ],
     "action": {
       "default_popup": "/popup/popup.html",
       "default_icon": "/popup/popup.png"
