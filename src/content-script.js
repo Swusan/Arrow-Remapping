@@ -8,20 +8,21 @@ document.addEventListener('keydown', (event) => {
             event.preventDefault();
 
             if (videoElement) {
-                // Encodes a new keyboard event, mimicking a right-arrow key event
-                const rightArrowEvent = new KeyboardEvent('keydown', {
-                    key: 'ArrowRight',
-                    code: 'ArrowRight',
-                    keyCode: 39, // right arrow keycode
-                    which: 39,
-                    bubbles: true,
-                    cancelable: true
-                });
+                // Dispatch the event if the video element exists
 
-                // And then we dispatch the event to the page
+                // HBO Max is so special and wants to be different
                 if (window.location.href.substring(0, 20) == "https://play.max.com") {
                     document.querySelector('[data-testid="player-ux-skip-forward-button"]').click();
                 } else {
+                    // Encodes a new keyboard event, mimicking a right-arrow key event
+                    const rightArrowEvent = new KeyboardEvent('keydown', {
+                        key: 'ArrowRight',
+                        code: 'ArrowRight',
+                        keyCode: 39, // right arrow keycode
+                        which: 39,
+                        bubbles: true,
+                        cancelable: true
+                    });
                     videoElement.dispatchEvent(rightArrowEvent);
                 }
 
@@ -32,20 +33,21 @@ document.addEventListener('keydown', (event) => {
             event.preventDefault();
         
             if (videoElement) {
-                // Encodes a new keyboard event, mimicking a left-arrow key event
-                const leftArrowEvent = new KeyboardEvent('keydown', {
-                    key: 'ArrowLeft',
-                    code: 'ArrowLeft',
-                    keyCode: 37, // left arrow keycode
-                    which: 37,
-                    bubbles: true,
-                    cancelable: true
-                });
+                // Dispatch the event if the video element exists
 
-                // And then we dispatch the event to the page
+                // HBO Max is so special and wants to be different
                 if (window.location.href.substring(0, 20) == "https://play.max.com") {
                     document.querySelector('[data-testid="player-ux-skip-back-button"]').click();
                 } else {
+                    // Encodes a new keyboard event, mimicking a left-arrow key event
+                    const leftArrowEvent = new KeyboardEvent('keydown', {
+                        key: 'ArrowLeft',
+                        code: 'ArrowLeft',
+                        keyCode: 37, // left arrow keycode
+                        which: 37,
+                        bubbles: true,
+                        cancelable: true
+                    });
                     videoElement.dispatchEvent(leftArrowEvent);
                 }
             }
