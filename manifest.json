@@ -12,11 +12,11 @@
     "content_scripts": [
       {
         "matches": [
-          "https://www.hulu.com/watch/*", 
-          "https://www.netflix.com/watch/*", 
-          "https://play.max.com/video/watch/*", 
-          "https://www.peacocktv.com/watch/*", 
-          "https://www.amazon.com/gp/video/*",
+          "https://www.hulu.com/*", 
+          "https://www.netflix.com/*", 
+          "https://play.max.com/*", 
+          "https://www.peacocktv.com/*", 
+          "https://www.amazon.com/*",
           "https://tv.apple.com/*"
         ],
         "js": ["/src/content-script.js"]
