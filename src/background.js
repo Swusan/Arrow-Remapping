@@ -1,3 +1,3 @@
-chrome.runtime.onInstalled.addListener(() => {
+chrome.runtime.onStartup.addListener(() => {
     console.log("Listener sucessfully installed!");
 });
