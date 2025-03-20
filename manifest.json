@@ -1,29 +1,29 @@
 {
-    "name": "Arrow Remapping",
-    "description": "Remaps J and L to arrow keys to be used for skips in streaming UIs",
-    "version": "1.0",
-    "manifest_version": 3,
-    "permissions": [
-      "activeTab"
-    ],
-    "background": {
-      "service_worker": "/src/background.js"
-    },
-    "content_scripts": [
-      {
-        "matches": [
-          "https://www.hulu.com/*", 
-          "https://www.netflix.com/*", 
-          "https://play.max.com/*", 
-          "https://www.peacocktv.com/*", 
-          "https://www.amazon.com/*",
-          "https://tv.apple.com/*"
-        ],
-        "js": ["/src/content-script.js"]
-      }
-    ],
-    "action": {
-      "default_popup": "/popup/popup.html",
-      "default_icon": "/popup/popup.png"
+  "name": "Arrow Remapping",
+  "description": "Remaps J and L to arrow keys to be used for skips in streaming UIs",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "/src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.hulu.com/*", 
+        "https://www.netflix.com/*", 
+        "https://play.max.com/*", 
+        "https://www.peacocktv.com/*", 
+        "https://www.amazon.com/*",
+        "https://tv.apple.com/*"
+      ],
+      "js": ["/src/content-script.js"]
     }
+  ],
+  "action": {
+    "default_popup": "/popup/popup.html",
+    "default_icon": "/popup/popup.png"
   }
+}

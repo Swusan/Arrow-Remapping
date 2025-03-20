@@ -2,6 +2,7 @@ document.addEventListener('keydown', (event) => {
     // Gets video player element
     const videoElement = document.querySelector('video');
 
+    // Switch control for inputs
     switch (event.key) {
         case ('l' || 'L'):
             // Prevent default event
