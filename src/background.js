@@ -1,4 +1,4 @@
 // Background task to add listner used by content script
-chrome.runtime.onStartup.addListener(() => {
+chrome.runtime.onInstalled.addListener(() => {
     console.log("Listener sucessfully installed!");
 });
