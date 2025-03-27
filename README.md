@@ -3,7 +3,7 @@
 Arrow Remapping is a super niche chrome extension that remaps J and L keys to left and right arrow respectively. This is only used in certain streaming services (List Below).
 
 ## TO-DO
-- Popup Design
+- Polish Popup Design
 - Get hired at Amazon to make my extension work there
 
 ## Contributing
