@@ -1,7 +1,7 @@
 {
   "name": "Arrow Remapping",
   "description": "Remaps J and L to arrow keys to be used for skips in streaming UIs",
-  "version": "1.0",
+  "version": "0.1.0",
   "manifest_version": 3,
   "permissions": [
     "activeTab"
