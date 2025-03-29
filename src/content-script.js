@@ -1,6 +1,12 @@
 document.addEventListener('keydown', (event) => {
     // Gets video player element
-    const videoElement = document.querySelector('video');
+    let videoElement;
+
+    if (window.location.href.substring(0, 22) == "https://www.amazon.com") {
+        videoElement = document.getElementById('dv-web-player');
+    } else {
+        videoElement = document.querySelector('video');
+    }
 
     // Encodes a new keyboard event, mimicking a right-arrow key event
     const rightArrowEvent = new KeyboardEvent('keydown', {
@@ -29,6 +35,8 @@ document.addEventListener('keydown', (event) => {
             event.preventDefault();
 
             if (videoElement) {
+                videoElement.focus();
+
                 // Dispatch the event if the video element exists
 
                 // HBO Max is so special and wants to be different
@@ -45,6 +53,8 @@ document.addEventListener('keydown', (event) => {
             event.preventDefault();
         
             if (videoElement) {
+                videoElement.focus();
+
                 // Dispatch the event if the video element exists
 
                 // HBO Max is so special and wants to be different

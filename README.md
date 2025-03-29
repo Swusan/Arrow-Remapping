@@ -3,7 +3,6 @@
 Arrow Remapping is a super niche chrome extension that remaps J and L keys to left and right arrow respectively. This is only used in certain streaming services (List Below).
 
 ## TO-DO
-- Polish Popup Design
 - Get hired at Amazon to make my extension work there
 
 ## Contributing
@@ -23,4 +22,5 @@ Any site not listed either has the functionality (Like Paramount+ and Crunchyrol
 - HBO Max
 
 ## Not Working Sites
-  - Amazon Prime
+  - Amazon Prime  
+Nothing appears to work for Amazon. I suspect anti-scripting doo-hickeys in the background. Selenium might be an option, but I am way too lazy to do that for just amazon. TLDR; Amazon ain't gonna work until it does.
