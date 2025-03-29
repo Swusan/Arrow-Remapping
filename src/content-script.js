@@ -35,8 +35,6 @@ document.addEventListener('keydown', (event) => {
             event.preventDefault();
 
             if (videoElement) {
-                videoElement.focus();
-
                 // Dispatch the event if the video element exists
 
                 // HBO Max is so special and wants to be different
@@ -53,8 +51,6 @@ document.addEventListener('keydown', (event) => {
             event.preventDefault();
         
             if (videoElement) {
-                videoElement.focus();
-
                 // Dispatch the event if the video element exists
 
                 // HBO Max is so special and wants to be different
