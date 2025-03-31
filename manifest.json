@@ -25,5 +25,8 @@
   "action": {
     "default_popup": "/popup/popup.html",
     "default_icon": "/popup/popup.png"
+  },
+  "icons": {
+
   }
 }
