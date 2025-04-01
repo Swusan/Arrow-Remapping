@@ -31,9 +31,6 @@ document.addEventListener('keydown', (event) => {
     // Switch control for inputs
     switch (event.key) {
         case ('l' || 'L'):
-            // Prevent default event
-            event.preventDefault();
-
             if (videoElement) {
                 // Dispatch the event if the video element exists
 
@@ -47,9 +44,6 @@ document.addEventListener('keydown', (event) => {
             }
             break;
         case ('j' || 'J'):
-            // Prevent default event
-            event.preventDefault();
-        
             if (videoElement) {
                 // Dispatch the event if the video element exists
 
