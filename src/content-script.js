@@ -2,11 +2,7 @@ document.addEventListener('keydown', (event) => {
     // Gets video player element
     let videoElement;
 
-    if (window.location.href.substring(0, 22) == "https://www.amazon.com") {
-        videoElement = document.getElementById('dv-web-player');
-    } else {
-        videoElement = document.querySelector('video');
-    }
+    videoElement = document.querySelector('video');
 
     // Encodes a new keyboard event, mimicking a right-arrow key event
     const rightArrowEvent = new KeyboardEvent('keydown', {
